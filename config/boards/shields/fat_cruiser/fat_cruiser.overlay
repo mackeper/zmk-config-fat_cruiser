@@ -1,24 +1,28 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
-// https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html
-&pro_micro_i2c {
+/* OLED display */
+/* https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html */
+&i2c0 {
     status = "okay";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+    sda-gpios = <&pro_micro 2 GPIO_OPEN_DRAIN>;
+    scl-gpios = <&pro_micro 3 GPIO_OPEN_DRAIN>;
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-names = "default";
 
     ssd1306_128x64: ssd1306@3c {
-        // Base
-        compatible = "solomon,ssd1306fb-i2c";
-        reg = <0x3C>;
-
-        // Display configuration
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
-        prechargrep = <0x22>;
-        width = <128>;
-        height = <64>;
-
+        segment-remap;
+        com-invdir;
+        prechargep = <0x22>;
     };
 };
 
