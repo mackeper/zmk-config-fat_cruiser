@@ -13,7 +13,7 @@
         // Display configuration
         segment-offset = <0>;
         page-offset = <0>;
-        display-offset = <0>
+        display-offset = <0>;
         multiplex-ratio = <63>;
         prechargrep = <0x22>;
         width = <128>;
