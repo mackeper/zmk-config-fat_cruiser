@@ -32,7 +32,7 @@
     status = "okay";
 
     oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
+        compatible = "solomon,ssd1306fb-i2c";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
@@ -44,5 +44,6 @@
         com-invdir;
         inversion-on;
         prechargep = <0x22>;
+        ready-time-ms = <100>;
     };
 };
