@@ -32,6 +32,8 @@
 /* https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html */
 &i2c0 {
     status = "okay";
+    sda-pin = <17>;  // P0.17 - Pro Micro pin 2
+    scl-pin = <20>;  // P0.20 - Pro Micro pin 3
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb-i2c";
