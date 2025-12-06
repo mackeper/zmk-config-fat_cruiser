@@ -1,22 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
-        };
-    };
-
-    i2c0_sleep: i2c0_sleep {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
-            low-power-enable;
-        };
-    };
-};
-
 / {
     chosen {
         zmk,kscan = &default_kscan;
@@ -45,15 +28,11 @@
 };
 
 /* OLED display */
-/* https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html */
-&i2c0 {
+&pro_micro_i2c {
     status = "okay";
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
 
     oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb-i2c";
+        compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
@@ -61,7 +40,9 @@
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
-        prechargep = <0x22>;
+        segment-remap;
+        com-invdir;
         inversion-on;
+        prechargep = <0x22>;
     };
 };
