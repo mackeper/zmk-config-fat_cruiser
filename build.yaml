@@ -21,3 +21,5 @@
 include:
   - board: nice_nano_v2
     shield: fat_cruiser
+  - board: nice_nano_v2
+    shield: ssd1306_128x64
