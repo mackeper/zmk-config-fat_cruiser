@@ -30,7 +30,7 @@
 
 /* OLED display */
 /* https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html */
-&pro_micro_i2c {
+&arduino_i2c {
     status = "okay";
 
     oled: ssd1306@3c {
