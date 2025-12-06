@@ -2,7 +2,7 @@
 
 
 // https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html
-&arduino_i2c {
+&pro_micro_i2c {
     status = "okay";
 
     ssd1306_128x64: ssd1306@3c {
@@ -14,7 +14,7 @@
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>
-        multiplex-ratio = <31>;
+        multiplex-ratio = <63>;
         prechargrep = <0x22>;
         width = <128>;
         height = <64>;
