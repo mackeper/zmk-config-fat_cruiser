@@ -7,7 +7,7 @@
 
     ssd1306_128x64: ssd1306@3c {
         // Base
-        compatible = "solomon,ssd1306fb";
+        compatible = "solomon,ssd1306fb-i2c";
         reg = <0x3C>;
 
         // Display configuration
