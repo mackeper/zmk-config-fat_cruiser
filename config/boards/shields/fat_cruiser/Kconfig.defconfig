@@ -4,3 +4,13 @@ if SHIELD_FAT_CRUISER
         default "fat_cruiser"
 
 endif
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+endif
