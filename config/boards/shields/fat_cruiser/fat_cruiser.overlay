@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &default_kscan;
         zmk,matrix-transform = &default_transform;
+        zephyr,display = &ssd1306_128x64;
     };
 
     default_kscan: kscan {
@@ -23,6 +24,27 @@
         map = <
             RC(0,0)
         >;
+    };
+
+    // https://docs.zephyrproject.org/latest/build/dts/api/bindings/display/solomon,ssd1306fb-i2c.html
+    &arduino_i2c {
+        status = "okay";
+
+        ssd1306_128x64: ssd1306@3c {
+            // Base
+            compatible = "solomon,ssd1306fb";
+            reg = <0x3C>;
+
+            // Display configuration
+            segment-offset = <0>;
+            page-offset = <0>;
+            display-offset = <0>
+            multiplex-ratio = <31>;
+            prechargrep = <0x22>;
+            width = <128>;
+            height = <64>;
+
+        };
     };
 
 };
