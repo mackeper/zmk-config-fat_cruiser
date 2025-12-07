@@ -41,6 +41,7 @@
         display-offset = <0>;
         multiplex-ratio = <63>;
         prechargep = <0x22>;
+        com-invdir;  // Inverts COM scan direction (flips display vertically)
         inversion-on;
     };
 };
