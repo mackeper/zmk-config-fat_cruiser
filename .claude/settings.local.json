@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:zmk.dev)",
+      "WebFetch(domain:docs.zephyrproject.org)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+      "WebFetch(domain:nicekeyboards.com)",
+      "WebFetch(domain:splitkb.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
