@@ -13,6 +13,7 @@
 
         row-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         col-gpios = <&pro_micro 6 GPIO_ACTIVE_HIGH>;
+                    <&pro_micro 5 GPIO_ACTIVE_HIGH>;
     };
 
     default_transform: matrix_transform {
