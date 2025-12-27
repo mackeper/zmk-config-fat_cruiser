@@ -20,10 +20,10 @@
         compatible = "zmk,matrix-transform";
 
         rows = <1>;
-        columns = <1>;
+        columns = <2>;
 
         map = <
-            RC(0,0)
+            RC(0,0) RC(0,1)
         >;
     };
 };
