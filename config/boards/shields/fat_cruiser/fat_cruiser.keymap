@@ -2,18 +2,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/ enum layers {
-    _QWERTY = 0,
-    _NAVIGATION,
-    _MOUSE,
-    _MEDIA,
-    _NUMBER,
-    _SYMBOLS,
-    _FUNCTION_KEYS,
-    _GAMING,
-    _GAMING_UTIL,
-    _BLUETOOTH,
-};
+#define _QWERTY 0
+#define _NAVIGATION 1
+#define _MOUSE 2
+#define _MEDIA 3
+#define _NUMBER 4
+#define _SYMBOLS 5
+#define _FUNCTION_KEYS 6
+#define _GAMING 7
+#define _GAMING_UTIL 8
+#define _BLUETOOTH 9
 
 / {
     keymap {
