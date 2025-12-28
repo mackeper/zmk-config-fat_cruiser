@@ -7,16 +7,19 @@
          compatible = "zmk,keymap";
 
          default_layer {
+             display-name = "BASE";
              bindings = <
                  &mt LMETA A &kp S &kp D &kp F &kp G
                  &kp Z       &kp X &kp C &kp V &kp B
              >;
          };
 
-        navigation_layer {
+         navigation_layer {
+             display-name = "NAV";
              bindings = <
                  &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp BSPC
                  &kp HOME &kp END &kp PGUP &kp PGDN &kp DEL
              >;
+         };
      };
  };
