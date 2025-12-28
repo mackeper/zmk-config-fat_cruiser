@@ -47,7 +47,8 @@
         display-offset = <0>;
         multiplex-ratio = <63>;
         prechargep = <0x22>;
-        com-invdir;  // Inverts COM scan direction (flips display horizontally)
-        /* inversion-on; */
+        com-invdir;  // Scan direction is from last COM output to first COM output (flips display horizontally)
+        inversion-on; // Color inversion
+        segment-remap; // Last column address is mapped to first segment
     };
 };
