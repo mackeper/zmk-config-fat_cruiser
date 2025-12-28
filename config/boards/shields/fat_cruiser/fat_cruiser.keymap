@@ -8,9 +8,15 @@
 
          default_layer {
              bindings = <
-                 &kp A &kp S &kp D &kp F &kp G
-                 &kp Z &kp X &kp C &kp V &kp B
+                 &mt LMETA A &kp S &kp D &kp F &kp G
+                 &kp Z       &kp X &kp C &kp V &kp B
              >;
          };
+
+        navigation_layer {
+             bindings = <
+                 &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp BSPC
+                 &kp HOME &kp END &kp PGUP &kp PGDN &kp DEL
+             >;
      };
  };
