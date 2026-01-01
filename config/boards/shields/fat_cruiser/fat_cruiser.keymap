@@ -47,77 +47,77 @@
             >;
         };
 
-        navigation_layer {
-            display-name = "NAV";
-            bindings = <
-                &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC
-                &none    &kp LC(X) &kp LC(C) &kp LC(V) &none
-            >;
-        };
-
-        // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation
-        mouse_layer {
-            display-name = "MOUSE";
-            bindings = <
-                &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &msc SCRL_DOWN
-                &mkp MB1        &mkp MB2       &none          &none           &none
-            >;
-        };
-
-        media_layer {
-            display-name = "MEDIA";
-            bindings = <
-                &none     &none     &none       &none       &none
-                &none     &none     &none       &none       &none
-            >;
-        };
-
-        number_layer {
-            display-name = "NUM";
-            bindings = <
-                &none     &none     &none       &none       &none
-                &none     &none     &none       &none       &none
-            >;
-        };
-
-        symbols_layer {
-            display-name = "SYM";
-            bindings = <
-                &none     &none     &none       &none       &none
-                &none     &none     &none       &none       &none
-            >;
-        };
-
-       function_keys_layer {
-            display-name = "FUNC";
-            bindings = <
-                &none     &none     &none       &none       &none
-                &none     &none     &none       &none       &none
-            >;
-        };
-
-        gaming_layer {
-            display-name = "GAME";
-            bindings = <
-                &none     &none     &none       &none       &none
-                &none     &none     &none       &none       &none
-            >;
-        };
-
-        gaming_util_layer {
-            display-name = "G-UTIL";
-            bindings = <
-                &none     &none     &none       &none       &none
-                &none     &none     &none       &none       &none
-            >;
-        };
-
-        bluetooth_layer {
-            display-name = "BT";
-            bindings = <
-                &bt BT_CLR_ALL     &bt BT_CLR     &none     &none     &out OUT_TOG
-                &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
-            >;
-        };
+       /*  navigation_layer { */
+       /*      display-name = "NAV"; */
+       /*      bindings = < */
+       /*          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC */
+       /*          &none    &kp LC(X) &kp LC(C) &kp LC(V) &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation */
+       /*  mouse_layer { */
+       /*      display-name = "MOUSE"; */
+       /*      bindings = < */
+       /*          &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &msc SCRL_DOWN */
+       /*          &mkp MB1        &mkp MB2       &none          &none           &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  media_layer { */
+       /*      display-name = "MEDIA"; */
+       /*      bindings = < */
+       /*          &none     &none     &none       &none       &none */
+       /*          &none     &none     &none       &none       &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  number_layer { */
+       /*      display-name = "NUM"; */
+       /*      bindings = < */
+       /*          &none     &none     &none       &none       &none */
+       /*          &none     &none     &none       &none       &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  symbols_layer { */
+       /*      display-name = "SYM"; */
+       /*      bindings = < */
+       /*          &none     &none     &none       &none       &none */
+       /*          &none     &none     &none       &none       &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /* function_keys_layer { */
+       /*      display-name = "FUNC"; */
+       /*      bindings = < */
+       /*          &none     &none     &none       &none       &none */
+       /*          &none     &none     &none       &none       &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  gaming_layer { */
+       /*      display-name = "GAME"; */
+       /*      bindings = < */
+       /*          &none     &none     &none       &none       &none */
+       /*          &none     &none     &none       &none       &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  gaming_util_layer { */
+       /*      display-name = "G-UTIL"; */
+       /*      bindings = < */
+       /*          &none     &none     &none       &none       &none */
+       /*          &none     &none     &none       &none       &none */
+       /*      >; */
+       /*  }; */
+       /**/
+       /*  bluetooth_layer { */
+       /*      display-name = "BT"; */
+       /*      bindings = < */
+       /*          &bt BT_CLR_ALL     &bt BT_CLR     &none     &none     &out OUT_TOG */
+       /*          &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4 */
+       /*      >; */
+       /*  }; */
     };
 };
