@@ -40,20 +40,22 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-    &kp Q       &kp W      &kp E        &kp R        &kp T   /**/ &kp Y        &kp U        &kp I       &kp O        &kp P
-    &mt LMETA A &mt LALT S &mt LCTRL D  &mt LSHIFT F &kp G   /**/ &kp H        &mt RSHIFT J &mt RCTRL K &mt RALT L   &mt RGUI SEMICOLON
-    &kp Z       &mt RALT X &kp C        &kp V        &kp B   /**/ &kp N        &kp M        &kp COMMA   &mt RALT DOT &kp SLASH
-                           &kp ESC      &kp BSPC     &kp SPC /**/ &kp ENTER    &kp TAB      &kp DEL
+    &kp Q       &kp W      &kp E        &kp R        &kp T                 /**/ &kp Y        &kp U        &kp I       &kp O        &kp P
+    &mt LMETA A &mt LALT S &mt LCTRL D  &mt LSHIFT F &kp G                 /**/ &kp H        &mt RSHIFT J &mt RCTRL K &mt RALT L   &mt RGUI SEMICOLON
+    &kp Z       &mt RALT X &kp C        &kp V        &kp B                 /**/ &kp N        &kp M        &kp COMMA   &mt RALT DOT &kp SLASH
+                           &kp ESC      &kp BSPC     &mt _NAVIGATION SPACE /**/ &kp ENTER    &kp TAB      &kp DEL
             >;
         };
 
-       /*  navigation_layer { */
-       /*      display-name = "NAV"; */
-       /*      bindings = < */
-       /*          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC */
-       /*          &none    &kp LC(X) &kp LC(C) &kp LC(V) &none */
-       /*      >; */
-       /*  }; */
+        navigation_layer {
+            display-name = "NAV";
+            bindings = <
+      &none        &none        &none        &none        &none   /**/ &none        &none        &none        &none        &none
+      &none        &none        &none        &none        &none   /**/ &none        &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
+      &none        &none        &none        &none        &none   /**/ &none        &none        &none        &none        &none
+                                &none        &none        &none   /**/ &none        &none        &none
+            >;
+        };
        /**/
        /*  // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation */
        /*  mouse_layer { */
