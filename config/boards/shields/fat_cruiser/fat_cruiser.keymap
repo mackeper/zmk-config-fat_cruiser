@@ -16,9 +16,13 @@
 #define _GAMING_UTIL 8
 #define _BLUETOOTH 9
 
-// Define custom behavior for Caps Word to continue on specific keys
 &caps_word {
+    // Define custom behavior for Caps Word to continue on specific keys
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+};
+
+&lt {
+    tapping-term-ms = <300>; // 200 ms by default
 };
 
 / {
