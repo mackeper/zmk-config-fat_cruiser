@@ -20,5 +20,5 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: fat_cruiser
+    shield: fat_cruiser_v2
     snippet: zmk-usb-logging

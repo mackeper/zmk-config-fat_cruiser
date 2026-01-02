@@ -1,7 +1,7 @@
-if SHIELD_FAT_CRUISER
+if SHIELD_FAT_CRUISER_V2
 
     config ZMK_KEYBOARD_NAME
-        default "fat_cruiser"
+        default "fat_cruiser_v2"
 
 endif
 
