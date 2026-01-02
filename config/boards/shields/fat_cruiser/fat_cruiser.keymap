@@ -95,10 +95,10 @@
         symbols_layer {
             display-name = "SYM";
             bindings = <
-&kp EXCLAMATION   &kp AT   &kp HASH &kp DOLLAR &kp EQUAL /**/ &none &none      &none     &none        &none
-&kp DOUBLE_QUOTES &kp LBKT &kp LBRC &kp LPAR   &kp PLUS  /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
-&kp TILDE         &kp RBKT &kp RBRC &kp RPAR   &kp N0    /**/ &none &none      &none     &kp RALT     &none
-                           &none    &kp PIPE   &kp UNDER /**/ &none &none      &none
+&kp EXCLAMATION   &kp AT   &kp HASH &kp DOLLAR &kp PERCENT /**/ &none &none      &none     &none        &none
+&kp DOUBLE_QUOTES &kp LBKT &kp LBRC &kp LPAR   &kp CARET   /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
+&kp TILDE         &kp RBKT &kp RBRC &kp RPAR   &kp AMPS    /**/ &none &none      &none     &kp RALT     &none
+                           &none    &kp PIPE   &kp UNDER   /**/ &none &none      &none
             >;
         };
 
