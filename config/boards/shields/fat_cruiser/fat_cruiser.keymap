@@ -102,15 +102,27 @@
             >;
         };
 
-       function_keys_layer {
+        function_keys_layer {
             display-name = "FUNCTION";
             bindings = <
-&kp F12 &kp F7 &kp F8 &kp F9 &kp PRINTSCREEN /**/ &none &none      &none     &none        &none
-&kp F11 &kp F4 &kp F5 &kp F6 &kp SCROLLLOCK  /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
-&kp F10 &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK /**/ &none &none      &none     &kp RALT     &none
-               &none  &none  &none           /**/ &none &none      &none
+&kp F12 &kp F7 &kp F8          &kp F9 &kp PRINTSCREEN /**/ &none &none      &none     &none        &none
+&kp F11 &kp F4 &kp F5          &kp F6 &kp SCROLLLOCK  /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
+&kp F10 &kp F1 &kp F2          &kp F3 &kp PAUSE_BREAK /**/ &none &none      &none     &kp RALT     &none
+               &to _BLUETOOTH  &none  &none           /**/ &none &none      &none
             >;
         };
+
+        bluetooth_layer {
+            display-name = "BLUETOOTH";
+            bindings = <
+&bt BT_CLR_ALL &bt BT_CLR &bt BT_PRV &bt BT_NXT       &none /**/ &none &none         &none         &none         &none
+&none          &bt BT_SEL 3 &bt BT_SEL 4 &none        &none /**/ &none &bt BT_DISC 3 &bt BT_DISC 4 &none         &none
+&none          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none /**/ &none &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &none
+                            &to _QWERTY  &none        &none /**/ &none &none         &none
+            >;
+        };
+
+
        /**/
        /*  gaming_layer { */
        /*      display-name = "GAME"; */
