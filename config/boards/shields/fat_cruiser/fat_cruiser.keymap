@@ -54,7 +54,7 @@
         navigation_layer {
             display-name = "NAV";
             bindings = <
-&none        &none        &none        &none        &none   /**/ &capsword    &none    &none        &none        &none
+&none        &none        &none        &none        &none   /**/ &caps_word    &none    &none        &none        &none
 &kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT   &none   /**/ &kp CAPS     &kp LEFT &kp DOWN     &kp UP       &kp RIGHT
 &none        &kp RALT     &kp LC(C)    &kp LC(V)    &none   /**/ &kp INS      &kp HOME &kp PG_DN    &kp PG_UP    &kp END
                           &none        &none        &none   /**/ &kp ENTER    &kp TAB  &kp DEL
