@@ -68,7 +68,7 @@
 &none        &none        &none        &none        &none   /**/ &none        &none    &none        &none        &none
 &kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT   &none   /**/ &none      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
 &none        &kp RALT     &none        &none        &none   /**/ &none      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
-                          &none        &none        &none   /**/ &mkp BTN1  &mkp BTN2  &mkp BTN3
+                          &none        &none        &none   /**/ &mkp LCLK  &mkp RCLK &mkp MCLK
             >;
         };
        /**/
