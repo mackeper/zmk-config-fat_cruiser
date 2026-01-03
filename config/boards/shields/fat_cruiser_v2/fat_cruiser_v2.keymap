@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/outputs.h> // &out: Toggle between USB and BLE
 
 
+// Layer definitions
 #define _QWERTY 0
 #define _NAVIGATION 1
 #define _MOUSE 2
@@ -16,20 +17,26 @@
 #define _GAMING 8
 #define _GAMING_UTIL 9
 
+// Tapping configuration
+#define TAPPING_TERM 300
+#define QUICK_TAP 175
+#define PRIOR_IDLE 150
+
 &caps_word {
     // Define custom behavior for Caps Word to continue on specific keys
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
 };
 
 &lt {
-    tapping-term-ms = <300>; // 200 ms by default
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <QUICK_TAP>;
 };
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <300>;  // Match QMK TAPPING_TERM
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;  // Critical for fast typing/roll-over
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <QUICK_TAP>;
+    require-prior-idle-ms = <PRIOR_IDLE>;  // Critical for fast typing/roll-over
 };
 
 / {
