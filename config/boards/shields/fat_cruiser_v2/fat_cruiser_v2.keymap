@@ -25,6 +25,13 @@
     tapping-term-ms = <300>; // 200 ms by default
 };
 
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <300>;  // Match QMK TAPPING_TERM
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <150>;  // Critical for fast typing/roll-over
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -115,7 +122,7 @@
         bluetooth_layer {
             display-name = "BLUETOOTH";
             bindings = <
-&to _QWERTY    &bt BT_CLR   &bt BT_PRV &bt BT_NXT     &none /**/ &none &none         &none         &none         &bt BT_CLR_ALL
+&to _QWERTY    &bt BT_CLR   &bt BT_PRV &bt BT_NXT     &none /**/ &none &none         &none         &none         &none
 &none          &bt BT_SEL 3 &bt BT_SEL 4 &none        &none /**/ &none &bt BT_DISC 3 &bt BT_DISC 4 &none         &none
 &none          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none /**/ &none &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &none
                             &none        &none        &none /**/ &none &none         &none
