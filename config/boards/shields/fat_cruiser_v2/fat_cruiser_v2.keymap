@@ -12,9 +12,9 @@
 #define _NUMBER 4
 #define _SYMBOLS 5
 #define _FUNCTION_KEYS 6
-#define _GAMING 7
-#define _GAMING_UTIL 8
-#define _BLUETOOTH 9
+#define _BLUETOOTH 7
+#define _GAMING 8
+#define _GAMING_UTIL 9
 
 &caps_word {
     // Define custom behavior for Caps Word to continue on specific keys
