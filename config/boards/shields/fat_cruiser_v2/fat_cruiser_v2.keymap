@@ -128,10 +128,10 @@
         navigation_layer {
             display-name = "NAVIGATION";
             bindings = <
-&none     &none          &none     &none      &none /**/ &caps_word    &none    &none        &none        &none
-&kp LMETA &kp LALT       &kp LCTRL &kp LSHIFT &none /**/ &kp CAPS     &kp LEFT &kp DOWN     &kp UP       &kp RIGHT
-&none     &mt RALT LC(X) &kp LC(C) &kp LC(V)  &none /**/ &kp INS      &kp HOME &kp PG_DN    &kp PG_UP    &kp END
-                         &none     &none      &none /**/ &kp ENTER    &kp TAB  &kp DEL
+&none       &none          &none     &none      &none /**/ &caps_word &none    &none     &none     &none
+&kp LMETA   &kp LALT       &kp LCTRL &kp LSHIFT &none /**/ &kp CAPS   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT
+&none       &mt RALT LC(X) &kp LC(C) &kp LC(V)  &none /**/ &kp INS    &kp HOME &kp PG_DN &kp PG_UP &kp END
+                           &none     &none      &none /**/ &kp ENTER  &kp TAB  &kp DEL
             >;
         };
 
@@ -139,39 +139,39 @@
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&none        &none        &none        &none        &none   /**/ &none        &none    &none        &none        &none
-&kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT   &none   /**/ &none      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
-&none        &kp RALT     &none        &none        &none   /**/ &none      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
-                          &none        &none        &none   /**/ &mkp LCLK  &mkp RCLK &mkp MCLK
+&none     &none    &none     &none      &none /**/ &none     &none          &none          &none        &none
+&kp LMETA &kp LALT &kp LCTRL &kp LSHIFT &none /**/ &none     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+&none     &kp RALT &none     &none      &none /**/ &none     &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
+                   &none     &none      &none /**/ &mkp LCLK &mkp RCLK      &mkp MCLK
             >;
         };
 
         media_layer {
             display-name = "MEDIA";
             bindings = <
-&none        &none        &none        &none        &none   /**/ &none              &none      &none        &none        &none
-&kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT   &none   /**/ &none             &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-&none        &kp RALT     &none        &none        &none   /**/ &none             &kp RA(W)   &kp RA(Q)    &kp RA(P)    &none
-                          &none        &none        &none   /**/ &kp C_PLAY_PAUSE  &kp C_PAUSE &kp C_MUTE
+&none     &none    &none     &none      &none /**/ &none             &none       &none        &none        &none
+&kp LMETA &kp LALT &kp LCTRL &kp LSHIFT &none /**/ &none             &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+&none     &kp RALT &none     &none      &none /**/ &none             &kp RA(W)   &kp RA(Q)    &kp RA(P)    &none
+                   &none     &none      &none /**/ &kp C_PLAY_PAUSE  &kp C_PAUSE &kp C_MUTE
             >;
         };
 
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&kp ASTERISK     &kp N7 &kp N8 &kp N9        &kp EQUAL /**/ &none &none      &none     &none        &none
-&kp SINGLE_QUOTE &kp N4 &kp N5 &kp N6        &kp PLUS  /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
-&kp GRAVE        &kp N1 &kp N2 &kp N3        &kp N0    /**/ &none &none      &none     &kp RALT     &none
-                        &none  &kp BACKSLASH &kp MINUS /**/ &none &none      &none
+&kp ASTERISK     &kp N7 &kp N8 &kp N9        &kp EQUAL  /**/ &none &none      &none     &none    &none
+&kp SINGLE_QUOTE &kp N4 &kp N5 &kp N6        &kp PLUS   /**/ &none &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI
+&kp GRAVE        &kp N1 &kp N2 &kp N3        &kp N0     /**/ &none &none      &none     &kp RALT &none
+                        &none  &kp BACKSLASH &kp MINUS  /**/ &none &none      &none
             >;
         };
 
         symbols_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp EXCLAMATION   &kp AT   &kp HASH &kp DOLLAR &kp PERCENT /**/ &none &none      &none     &none        &none
-&kp DOUBLE_QUOTES &kp LBKT &kp LBRC &kp LPAR   &kp CARET   /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
-&kp TILDE         &kp RBKT &kp RBRC &kp RPAR   &kp AMPS    /**/ &none &none      &none     &kp RALT     &none
+&kp EXCLAMATION   &kp AT   &kp HASH &kp DOLLAR &kp PERCENT /**/ &none &none      &none     &none    &none
+&kp DOUBLE_QUOTES &kp LBKT &kp LBRC &kp LPAR   &kp CARET   /**/ &none &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI
+&kp TILDE         &kp RBKT &kp RBRC &kp RPAR   &kp AMPS    /**/ &none &none      &none     &kp RALT &none
                            &none    &kp PIPE   &kp UNDER   /**/ &none &none      &none
             >;
         };
@@ -179,20 +179,20 @@
         function_keys_layer {
             display-name = "FUNCTION";
             bindings = <
-&kp F12 &kp F7 &kp F8          &kp F9 &kp PRINTSCREEN /**/ &none &none      &none     &none        &none
-&kp F11 &kp F4 &kp F5          &kp F6 &kp SCROLLLOCK  /**/ &none &kp LSHIFT &kp LCTRL &kp LALT     &kp LGUI
-&kp F10 &kp F1 &kp F2          &kp F3 &kp PAUSE_BREAK /**/ &none &none      &none     &kp RALT     &none
-               &sl _BLUETOOTH  &none  &none           /**/ &none &none      &none
+&kp F12 &kp F7 &kp F8         &kp F9 &kp PRINTSCREEN /**/ &none &none      &none     &none    &none
+&kp F11 &kp F4 &kp F5         &kp F6 &kp SCROLLLOCK  /**/ &none &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI
+&kp F10 &kp F1 &kp F2         &kp F3 &kp PAUSE_BREAK /**/ &none &none      &none     &kp RALT &none
+               &sl _BLUETOOTH &none  &none           /**/ &none &none      &none
             >;
         };
 
         bluetooth_layer {
             display-name = "BLUETOOTH";
             bindings = <
-&to _QWERTY    &bt BT_CLR   &bt BT_PRV &bt BT_NXT     &out OUT_TOG /**/ &none &none         &none         &none         &none
-&none          &bt BT_SEL 3 &bt BT_SEL 4 &none        &none        /**/ &none &bt BT_DISC 3 &bt BT_DISC 4 &none         &none
-&none          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        /**/ &none &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &none
-                            &none        &none        &none        /**/ &none &none         &none
+&to _QWERTY &bt BT_CLR   &bt BT_PRV   &bt BT_NXT   &out OUT_TOG /**/ &none &none         &none         &none         &none
+&none       &bt BT_SEL 3 &bt BT_SEL 4 &none        &none        /**/ &none &bt BT_DISC 3 &bt BT_DISC 4 &none         &none
+&none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        /**/ &none &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &none
+                         &none        &none        &none        /**/ &none &none         &none
             >;
         };
 
