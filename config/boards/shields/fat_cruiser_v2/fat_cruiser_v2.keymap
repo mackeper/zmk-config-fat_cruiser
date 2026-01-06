@@ -40,6 +40,66 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        // Left bracket [ - at S position (A+S)
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp LBKT>;
+        };
+
+        // Left brace { - at D position (S+D)
+        combo_lbrc {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LBRC>;
+        };
+
+        // Left paren ( - at F position (D+F)
+        combo_lpar {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LPAR>;
+        };
+
+        // Right bracket ] - at X position (Z+X)
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp RBKT>;
+        };
+
+        // Right brace } - at C position (X+C)
+        combo_rbrc {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp RBRC>;
+        };
+
+        // Right paren ) - at V position (C+V)
+        combo_rpar {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp RPAR>;
+        };
+
+        // Equal = - at T position (R+T)
+        combo_equal {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp EQUAL>;
+        };
+
+        // Plus + - at G position (F+G)
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp PLUS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
