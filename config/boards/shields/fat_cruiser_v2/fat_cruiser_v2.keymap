@@ -62,7 +62,9 @@
                 , <&macro_tap &kp TAB>
                 , <&macro_release &kp LSHFT>
                 , <&macro_tap &kp K &kp A &kp R &kp A>
+                , <&macro_wait_time 200>
                 , <&macro_tap &kp TAB>
+                , <&macro_wait_time 200>
                 , <&macro_tap &kp 1 &kp 1 &kp 1 &kp 1 &kp 1 &kp 1>
                 ;
         };
