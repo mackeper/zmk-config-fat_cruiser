@@ -52,6 +52,39 @@
 
 / {
     macros {
+        swedish_ae: swedish_ae {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <30>;
+            tap-ms = <30>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        swedish_aa: swedish_aa {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <30>;
+            tap-ms = <30>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp W>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        swedish_oe: swedish_oe {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <30>;
+            tap-ms = <30>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp P>
+                , <&macro_release &kp RALT>
+                ;
+        };
         rs_kara_login: rs_kara_login {
             compatible = "zmk,behavior-macro";
             wait-ms = <30>;
@@ -121,7 +154,7 @@
             bindings = <
 &none     &none    &none     &none      &none /**/ &none             &none       &none        &none        &none
 &kp LMETA &kp LALT &kp LCTRL &kp LSHIFT &none /**/ &none             &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-&none     &kp RALT &none     &none      &none /**/ &none             &kp RA(W)   &kp RA(Q)    &kp RA(P)    &none
+&none     &kp RALT &none     &none      &none /**/ &none             &swedish_aa &swedish_ae   &swedish_oe    &none
                    &none     &none      &none /**/ &kp C_PLAY_PAUSE  &kp C_PAUSE &kp C_MUTE
             >;
         };
